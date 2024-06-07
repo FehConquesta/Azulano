@@ -1,11 +1,16 @@
 package com.example.azulano
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.azulano.databinding.ActivityLoginBinding
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -36,15 +41,14 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.Senha.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty()){
+                login(it)
                 entrar(email, password)
-                navegarTelaPrincipal()
+
             }else{
                 Toast.makeText(this@LoginActivity, "Preencha os campos",Toast.LENGTH_SHORT).show()
             }
 
         }
-
-
 
     }
     private fun entrar(email: String, password: String){
@@ -52,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
             if(task.isSuccessful){
                 Log.d(TAG,"SignInUserWithEmailAndPassword:Success")
                 val user = auth.currentUser
+
             }else  {
                 Log.w(TAG,"SignInUserWithEmailAndPassword:Failure")
                 Toast.makeText(baseContext,"E-mail ou Senha incorretos", Toast.LENGTH_SHORT).show()
@@ -70,9 +75,22 @@ class LoginActivity : AppCompatActivity() {
     private fun navegarTelaPrincipal(){
         val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
     private fun navegarTelaSenha(){
         val intent = Intent(this,ForgotActivity::class.java)
         startActivity(intent)
+    }
+    private fun login(view: View){
+
+        val progressBar = binding.progressBar
+        progressBar.visibility = View.VISIBLE
+
+        binding.btEntrar.isEnabled = false
+        binding.btEntrar.setTextColor(Color.parseColor("#FFFFFF"))
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            navegarTelaPrincipal() },3000)
+
     }
 }
