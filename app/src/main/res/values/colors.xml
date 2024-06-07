@@ -9,6 +9,7 @@
     <color name="red">#FF0000</color>
     <color name="light_green">#90F6AC</color>
     <color name="green">#00FA9A</color>
+    <color name="transparente">#00000000</color>
 
 
 </resources>
