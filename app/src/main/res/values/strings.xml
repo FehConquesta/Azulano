@@ -20,4 +20,11 @@
     <string name="concluir">Concluir Cadastro</string>
     <string name="voltar">Voltar</string>
     <string name="esqueci">Esqueci minha senha</string>
+    <string name="reset">Resetar a senha</string>
+    <string name="texto_reset">Insira o e-mail cadastrado para que seja enviado um link para o reset de senha</string>
+    <string name="cadastrar">Cadastrar</string>
+
+
+
+
 </resources>

@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
 
             if(email.isNotEmpty() && password.isNotEmpty()){
                 entrar(email, password)
+                navegarTelaPrincipal()
             }else{
                 Toast.makeText(this@LoginActivity, "Preencha os campos",Toast.LENGTH_SHORT).show()
             }
@@ -50,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if(task.isSuccessful){
                 Log.d(TAG,"SignInUserWithEmailAndPassword:Success")
-                //val user = auth.currentUser
+                val user = auth.currentUser
             }else  {
                 Log.w(TAG,"SignInUserWithEmailAndPassword:Failure")
                 Toast.makeText(baseContext,"E-mail ou Senha incorretos", Toast.LENGTH_SHORT).show()

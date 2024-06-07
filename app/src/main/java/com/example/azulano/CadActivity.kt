@@ -1,5 +1,6 @@
 package com.example.azulano
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -46,7 +47,9 @@ class CadActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
             if(task.isSuccessful){
                 Log.d(TAG,"CreateUserWithEmailAndPassword:Success")
-                //val user = auth.currentUser
+                Toast.makeText(baseContext,"Cadastrado com sucesso", Toast.LENGTH_SHORT).show()
+                val user = auth.currentUser
+                navegarTelaLogin()
             }else  {
                 Log.w(TAG,"CreateInUserWithEmailAndPassword:Failure")
                 Toast.makeText(baseContext,"E-mail ou Senha incorretos", Toast.LENGTH_SHORT).show()
@@ -57,6 +60,11 @@ class CadActivity : AppCompatActivity() {
 
     companion object{
         private var TAG ="EmailAndPassword"
+    }
+
+    private fun navegarTelaLogin(){
+        val intent = Intent(this,LoginActivity::class.java)
+        startActivity(intent)
     }
 
 }
