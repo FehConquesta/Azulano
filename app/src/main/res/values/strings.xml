@@ -4,27 +4,28 @@
     <string name="hint_senha">Senha</string>
     <string name="txt_entrar">Entrar</string>
     <string name="txt_cadastro">Não tem conta? Cadastre-se!</string>
-    <string name="txt_localizar">Localizar PS</string>
-    <string name="txt_localizar_convenio">Localizar Credenciada</string>
     <string name="txt_config">Configurações</string>
-    <string name="txt_ajuda">Ajuda</string>
-    <string name="cad_nome">Nome Completo</string>
-    <string name="cad_dt_nasc">Data de Nascimento</string>
     <string name="cad_email">E-mail</string>
     <string name="cad_senha">Senha</string>
     <string name="cad_conf_senha">Confirme a senha</string>
     <string name="avancar">Avançar</string>
-    <string name="cad_conv">Convenio</string>
-    <string name="cad_tipo">Tipo do convenio</string>
-    <string name="cad_num">Numero da carteirinha</string>
     <string name="concluir">Concluir Cadastro</string>
     <string name="voltar">Voltar</string>
     <string name="esqueci">Esqueci minha senha</string>
     <string name="reset">Enviar e-mail de reset</string>
     <string name="texto_reset">Insira o e-mail cadastrado para que seja enviado um link para o reset de senha</string>
     <string name="cadastrar">Cadastrar</string>
-
-
+    <string name="galeria">Galeria</string>
+    <string name="camera">CAMERA</string>
+    <string name="configuracao">CONFIGURAÇÃO</string>
+    <string name="animal">Enter animal name</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="read">READ</string>
+    <string name="display">A lista de animais vai aparecer aqui</string>
+    <string name="add">ADD</string>
+    <string name="picture">TAKE PICTURE</string>
+    <string name="capture">CAPTURED IMAGE</string>
 
 
 </resources>

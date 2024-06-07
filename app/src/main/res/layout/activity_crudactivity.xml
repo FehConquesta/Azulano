@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextAnimalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/animal"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_below="@id/editTextAnimalName"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_below="@id/buttonUpdate"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read"
+        android:layout_below="@id/buttonDelete"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAnimals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRead"
+        android:layout_marginTop="16dp"
+        android:text="@string/display"
+        android:textSize="16sp" />
+
+</RelativeLayout>

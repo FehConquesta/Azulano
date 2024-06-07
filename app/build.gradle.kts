@@ -56,6 +56,10 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth-ktx:21.0.3")
     implementation ("com.google.firebase:firebase-firestore-ktx:24.0.2")
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation ("com.google.firebase:firebase-firestore")
+    implementation ("com.google.firebase:firebase-database:20.0.4")
+    implementation("com.google.firebase:firebase-analytics:21.1.0")
+    implementation ("com.google.firebase:firebase-core:21.1.0")
 
     implementation (libs.material)
 

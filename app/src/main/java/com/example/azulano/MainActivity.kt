@@ -1,5 +1,6 @@
 package com.example.azulano
 
+import android.content.Intent
 import android.os.Bundle
 
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.azulano.adapter.CarrosselAdapter
 import com.example.azulano.databinding.ActivityMainBinding
 import com.example.azulano.model.Carrossel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,12 +22,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val recyclerViewCarrossel = binding.recyclerView
+        val recyclerViewCarrossel = binding.recyclerViewCarrossel
         recyclerViewCarrossel.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
         recyclerViewCarrossel.setHasFixedSize(true)
         carrosselAdapter = CarrosselAdapter(this,listaCarrossel)
         recyclerViewCarrossel.adapter = carrosselAdapter
         getImages()
+
+        binding.cardCamera.setOnClickListener{
+            navegarCamera()
+
+        }
+        binding.cardGaleria.setOnClickListener{
+            navegarCrud()
+        }
+
 
     }
     private fun getImages(){
@@ -41,7 +52,16 @@ class MainActivity : AppCompatActivity() {
         val imagem4 = Carrossel(R.drawable.tartaruga)
         listaCarrossel.add(imagem4)
 
-
     }
 
+    private fun navegarCamera(){
+        val intent = Intent(this,CameraActivity::class.java)
+        startActivity(intent)
+
+    }
+    private fun navegarCrud(){
+        val intent = Intent(this,CRUDActivity::class.java)
+        startActivity(intent)
+
+    }
 }
