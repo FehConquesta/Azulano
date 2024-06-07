@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+        <!-- Base application theme. -->
+    <style name="Base.Theme.Azulano" parent="Theme.AppCompat.DayNight.NoActionBar">
+            <!-- Customize your theme here. -->
+            <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Azulano" parent="Base.Theme.Azulano" />
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+
+</resources>
+

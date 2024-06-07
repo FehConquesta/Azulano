@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Azulano</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="txt_entrar">Entrar</string>
+    <string name="txt_cadastro">Não tem conta? Cadastre-se!</string>
+    <string name="txt_localizar">Localizar PS</string>
+    <string name="txt_localizar_convenio">Localizar Credenciada</string>
+    <string name="txt_config">Configurações</string>
+    <string name="txt_ajuda">Ajuda</string>
+    <string name="cad_nome">Nome Completo</string>
+    <string name="cad_dt_nasc">Data de Nascimento</string>
+    <string name="cad_email">E-mail</string>
+    <string name="cad_senha">Senha</string>
+    <string name="cad_conf_senha">Confirme a senha</string>
+    <string name="avancar">Avançar</string>
+    <string name="cad_conv">Convenio</string>
+    <string name="cad_tipo">Tipo do convenio</string>
+    <string name="cad_num">Numero da carteirinha</string>
+    <string name="concluir">Concluir Cadastro</string>
+    <string name="voltar">Voltar</string>
+    <string name="esqueci">Esqueci minha senha</string>
+</resources>

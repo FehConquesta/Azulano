@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702563308875",
+    "project_id": "azulano",
+    "storage_bucket": "azulano.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702563308875:android:362116a4e5f763283744ce",
+        "android_client_info": {
+          "package_name": "com.example.azulano"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9rhlAwiC3QebBf8fKLnweA5LrIbMD8UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
